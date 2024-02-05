@@ -28,3 +28,9 @@ void PrintArr(string[] arr)
 {   
     Console.Write($"[{String.Join("; ", arr)}]");
 }
+string[] arrOfStrings = Request("Введите элементы массива строк, отделяя каждый элемент массива точкой с запятой и пробелом (; ): ");
+string[] arrOfThreeSymbols = GetArrLessOrEqualThreeSymbols(arrOfStrings);
+Console.Write("Сформированный массив из элементов введенного массива ");
+PrintArr(arrOfStrings);
+Console.Write(", длинна которых меньше или равна 3 символам, равен ");
+PrintArr(arrOfThreeSymbols);
