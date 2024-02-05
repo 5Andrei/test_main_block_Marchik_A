@@ -24,3 +24,7 @@ string[] GetArrLessOrEqualThreeSymbols(string[] arr)
     }
     return main;
 }
+void PrintArr(string[] arr)
+{   
+    Console.Write($"[{String.Join("; ", arr)}]");
+}
